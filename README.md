@@ -22,6 +22,9 @@ This To-Do List application allows users to:
 - HTML
 - CSS
 
+#### Overview
+The application features a clean and intuitive user interface designed using HTML and styled with CSS. It focuses on simplicity and ease of use, ensuring that users can efficiently manage their daily tasks.
+
 ![Screenshot 2024-07-04 115701](https://github.com/vyasarpan23/Codtech-Task-1/assets/174682306/9f5356fa-c56f-46e9-9fe1-7f6cba8faa17)
 ![Screenshot 2024-07-04 115718](https://github.com/vyasarpan23/Codtech-Task-1/assets/174682306/22be96cf-8e80-4ac2-8cd9-ee9d6610c9ff)
 ![Screenshot 2024-07-04 115738](https://github.com/vyasarpan23/Codtech-Task-1/assets/174682306/bac4bb0f-1263-4ff9-b533-051fd95f118f)
@@ -35,8 +38,7 @@ This To-Do List application allows users to:
 
   
 
-#### Overview
-The application features a clean and intuitive user interface designed using HTML and styled with CSS. It focuses on simplicity and ease of use, ensuring that users can efficiently manage their daily tasks.
+
 
 
 
