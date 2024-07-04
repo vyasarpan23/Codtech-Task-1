@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(aa.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.box {
+    position: relative;
+    width: 450px;
+    backdrop-filter: blur(5px);
+    height: 550px;
+    border-radius: 30px;
+    padding: 30px 50px;
+    box-shadow: 25px 25px 75px rgba(194, 58, 58, 0.25), 
+                10px 10px 70px rgba(208, 18, 18, 0.25),
+                inset 5px 5px 10px rgba(184, 41, 41, 0.5),
+                inset -5px -5px 15px rgba(209, 26, 26, 0.75);
+}
+
+h2 {
+    width: 100%;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    color: rgb(60, 10, 10);
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    letter-spacing: 0.1em;
+}
+
+#inputBx {
+    position: relative;
+    width: 100%;
+    border: none;
+    font-style: italic;
+    outline: none;
+    background: white;
+    padding: 15px 20px;
+    border-radius: 30px;
+    font-size: 1em;
+    box-shadow: 5px 5px 7px rgba(184, 41, 41, 0.5),
+                inset 2px 2px 5px rgba(184, 41, 41, 0.5),
+                inset -3px -3px 5px rgba(184, 41, 41, 0.5);
+    transition: box-shadow 0.3s, background-color 0.3s;
+}
+
+#inputBx:focus {
+    outline: 2px solid rgb(229, 108, 110);
+    outline-offset: 2px;
+}
+
+#inputBx.success {
+    border: 2px solid green;
+}
+
+#inputBx.error {
+    border: 2px solid red;
+}
+
+.box li {
+    width: calc(100% - 60px);
+    position: relative;
+    display: flex;
+    font-style: italic;
+    font-size: 1.2em;
+    align-items: center;
+    font-weight: bolder;
+    background: rgb(190, 113, 113);
+    margin: 15px 0;
+    padding: 10px 10px 10px 50px;
+    min-height: 45px;
+    cursor: pointer;
+    border-radius: 22.5px;
+    color: black;
+    box-shadow: 5px 5px 7px rgb(190, 113, 113),
+                inset 2px 2px 5px rgb(190, 113, 113),
+                inset -3px -3px 5px rgb(120, 77, 77);
+    transition: box-shadow 0.3s, background-color 0.3s;
+    letter-spacing: 0.05em;
+}
+
+.box li:hover {
+    background: rgb(211, 20, 52);
+    color: white;
+    box-shadow: 5px 5px 7px rgba(0,0,0,0.35),
+                inset 2px 2px 5px rgba(255,255,255,0.35),
+                inset -3px -3px 5px rgba(0,0,0,0.6);
+}
+
+.box li i {
+    position: absolute;
+    right: -50px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(211, 20, 52);
+    border-radius: 40%;
+    box-shadow: 5px 5px 7px rgba(0,0,0,0.25),
+                inset 2px 2px 5px rgba(255,255,255,0.25),
+                inset -3px -3px 5px rgba(0,0,0,0.5);
+}
+
+.box li i:hover {
+    background: rgb(111, 14, 14);
+}
+
+.box li i::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    background: white;
+    transform: rotate(45deg);
+}
+
+.box li i::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    background: white;
+    transform: rotate(-45deg);
+}
+
+.box li::before {
+    content: '';
+    position: absolute;
+    left: 12px;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(211, 20, 52);
+    border-radius: 40%;
+    box-shadow: 5px 5px 7px rgba(0,0,0,0.25),
+                inset 2px 2px 4px rgba(255,255,255,0.25),
+                inset -3px -3px 5px rgba(0,0,0,0.5);
+}
+
+.box li.done {
+    background: red;
+}
+
+.box li.done:after {
+    content: '';
+    position: absolute;
+    left: 18px;
+    width: 16px;
+    height: 5px;
+    border-left: 3px solid white;
+    border-bottom: 3px solid white;
+    transform: rotate(315deg);
+}
+
+#list {
+    position: relative;
+    margin-top: 20px;
+    height: 400px;
+    overflow-y: auto;
+    padding-right: 5px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 15px white;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(223, 89, 89);
+}
+
+@media (max-width: 600px) {
+    .box {
+        width: 90%;
+        padding: 20px 30px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    #inputBx {
+        padding: 10px 15px;
+    }
+
+    .box li {
+        font-size: 1em;
+        padding: 10px 15px 10px 40px;
+    }
+
+    .box li i {
+        right: -40px;
+    }
+} 
+
+
